@@ -80,7 +80,7 @@ def draw_object(surface, color, pos):
 
 
 def check_eat(python, feed):
-    if python.positions[1] == feed.position:
+    if python.positions[0] == feed.position:
         python.eat()
         feed.create()
         print("ate")
